@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="announcement">We would love to hear from you!</div>
+
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have a question? Send us a message.</p>
+
+        <form id="contactForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required
+                   placeholder="Enter your name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required
+                   placeholder="Enter your email">
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" required
+                      placeholder="Write your message"></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+            <p id="contactMessage" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <footer>
+        <h2>Nostra</h2>
+        <p>Thank you for visiting our store.</p>
+        <p>© 2026 Nostra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

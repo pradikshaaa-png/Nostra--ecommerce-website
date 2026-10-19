@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra | Collections</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="announcement">Discover your favourite styles!</div>
+
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="collection-header">
+        <h2>Our Collections</h2>
+        <p>Find your perfect style.</p>
+    </section>
+
+    <main class="collections-layout">
+
+        <aside class="filters">
+            <h3>Search Products</h3>
+            <input type="text" id="searchInput"
+                   placeholder="Search by name...">
+
+            <h3>Categories</h3>
+
+            <label>
+                <input type="checkbox" class="category-filter"
+                       value="shirts"> Shirts
+            </label>
+
+            <label>
+                <input type="checkbox" class="category-filter"
+                       value="tshirts"> T-Shirts
+            </label>
+
+            <label>
+                <input type="checkbox" class="category-filter"
+                       value="jeans"> Jeans
+            </label>
+
+            <label>
+                <input type="checkbox" class="category-filter"
+                       value="dresses"> Dresses
+            </label>
+
+            <button type="button" id="clearFilters" class="btn">
+                Clear Filters
+            </button>
+        </aside>
+
+        <section class="collection-products">
+            <p id="resultCount" aria-live="polite"></p>
+
+            <div class="product-grid" id="productGrid">
+
+                <article class="product-card" data-category="tshirts">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80" alt="White T-shirt">
+                    <h3>Classic White T-Shirt</h3>
+                    <p>₹599</p>
+                </article>
+
+                <article class="product-card" data-category="jeans">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=500&q=80" alt="Blue denim jeans">
+                    <h3>Blue Denim Jeans</h3>
+                    <p>₹1,299</p>
+                </article>
+
+                <article class="product-card" data-category="dresses">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80" alt="Elegant dress">
+                    <h3>Elegant Dress</h3>
+                    <p>₹1,499</p>
+                </article>
+
+                <article class="product-card" data-category="shirts">
+                    <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=500&q=80" alt="Casual shirt">
+                    <h3>Casual Shirt</h3>
+                    <p>₹899</p>
+                </article>
+
+                <article class="product-card" data-category="tshirts">
+                    <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=500&q=80" alt="Fashion T-shirt">
+                    <h3>Printed T-Shirt</h3>
+                    <p>₹699</p>
+                </article>
+
+                <article class="product-card" data-category="jeans">
+                    <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=500&q=80" alt="Fashion jeans">
+                    <h3>Classic Black Jeans</h3>
+                    <p>₹1,399</p>
+                </article>
+
+                <article class="product-card" data-category="shirts">
+                    <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=500&q=80" alt="Formal shirt">
+                    <h3>Formal Shirt</h3>
+                    <p>₹999</p>
+                </article>
+
+                <article class="product-card" data-category="dresses">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80"  alt="Women's fashion dress">
+                    <h3>Summer Dress</h3>
+                    <p>₹1,199</p>
+                </article>
+
+            </div>
+
+            <p id="noResults" hidden>No matching products found.</p>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Nostra</h2>
+        <p>Find your style. Express yourself.</p>
+        <p>© 2026 Nostra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

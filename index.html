@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="announcement">
+        Sale is live! Get up to 50% OFF selected styles.
+    </div>
+
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+
+    <section class="hero-slider">
+
+        <div class="hero-slide active"
+             style="background-image: linear-gradient(90deg, #000000a6, transparent), url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=85');">
+            <div class="hero-content">
+                <p>NEW SEASON · NEW STYLE</p>
+                <h2>Discover Your<br>Own Style</h2>
+                <p>Fashion that speaks for you.</p>
+                <a href="collections.html" class="btn">Shop Now →</a>
+            </div>
+        </div>
+    
+        <div class="hero-slide"
+             style="background-image: linear-gradient(90deg, #000000a6, transparent), url('https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1600&q=85');">
+            <div class="hero-content">
+                <p>EXPRESS YOURSELF</p>
+                <h2>Style That<br>Defines You</h2>
+                <p>Explore the latest fashion trends.</p>
+                <a href="collections.html" class="btn">Explore Now →</a>
+            </div>
+        </div>
+    
+        <div class="hero-slide"
+             style="background-image: linear-gradient(90deg, #000000a6, transparent), url('https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1600&q=85');">
+            <div class="hero-content">
+                <p>FRESH LOOKS, FRESH YOU</p>
+                <h2>Find Your<br>Perfect Look</h2>
+                <p>Upgrade your wardrobe with Nostra.</p>
+                <a href="collections.html" class="btn">Shop Collection →</a>
+            </div>
+        </div>
+    
+        <button class="slider-btn prev" id="prevSlide"
+                aria-label="Previous slide">&#10094;</button>
+    
+        <button class="slider-btn next" id="nextSlide"
+                aria-label="Next slide">&#10095;</button>
+    
+        <div class="slider-dots">
+            <button class="slider-dot active" aria-label="Slide 1"></button>
+            <button class="slider-dot" aria-label="Slide 2"></button>
+            <button class="slider-dot" aria-label="Slide 3"></button>
+        </div>
+    
+    </section>
+    
+
+    <section class="section">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <a href="collections.html?category=shirts">Shirts</a>
+            <a href="collections.html?category=tshirts">T-Shirts</a>
+            <a href="collections.html?category=dresses">Dresses</a>
+            <a href="collections.html?category=jeans">Jeans</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>New Arrivals</h2>
+        <div class="product-grid">
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80" alt="White T-shirt">
+                <h3>Classic White T-Shirt</h3>
+                <p>₹599</p>
+                <a class="btn" href="collections.html">Explore</a>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=500&q=80" alt="Blue jeans">
+                <h3>Blue Denim Jeans</h3>
+                <p>₹1,299</p>
+                <a class="btn" href="collections.html">Explore</a>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80" alt="Fashion dress">
+                <h3>Elegant Dress</h3>
+                <p>₹1,499</p>
+                <a class="btn" href="collections.html">Explore</a>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=500&q=80" alt="Casual shirt">
+                <h3>Casual Shirt</h3>
+                <p>₹899</p>
+                <a class="btn" href="collections.html">Explore</a>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Join Our Newsletter</h2>
+        <p>Get updates about new collections and special offers.</p>
+        <form id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required>
+            <button class="btn" type="submit">Subscribe</button>
+        </form>
+        <p id="newsletterMessage"></p>
+    </section>
+
+    <footer>
+        <h2>Nostra</h2>
+        <p>Style that makes you feel confident.</p>
+        <p>© 2026 Nostra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
